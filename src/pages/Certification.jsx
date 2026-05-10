@@ -55,7 +55,7 @@ export default function Certification() {
                 
                 <div className="cert-grid">
                     {certs.map((cert, idx) => (
-                        <Tilt key={idx} className="cert-card-tilt reveal" style={{ transitionDelay: `${idx * 0.1}s` }}>
+                        <Tilt key={idx} className="cert-card-tilt reveal" style={{ transitionDelay: (idx * 0.1) + 's' }}>
                             <div 
                                 className="cert-card" 
                                 style={{ cursor: 'pointer' }}

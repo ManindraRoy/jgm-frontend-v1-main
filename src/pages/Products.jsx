@@ -65,7 +65,7 @@ export default function Products() {
                         <div 
                             key={product.id || product._id} 
                             className="product-card reveal"
-                            style={{ transitionDelay: `${(index % 4) * 0.1}s` }}
+                            style={{ transitionDelay: ((index % 4) * 0.1) + 's' }}
                             onClick={() => navigate(`/product/${product.id || product._id}`)}
                         >
                             <div className="product-img-container">
