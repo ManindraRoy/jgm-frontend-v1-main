@@ -185,7 +185,7 @@ export default function Profile() {
                     ) : (
                         <div className="orders-list">
                             {orders.map((order, idx) => (
-                                <div key={order.id || order._id} className="order-card reveal" style={{ transitionDelay: (idx * 0.1) + 's' }}>
+                                <div key={order.id || order._id} className="order-card reveal" style={{ transitionDelay: `${idx * 0.1}s` }}>
                                     <div className="order-header">
                                         <div className="order-id-block">
                                             <span className="order-date">{new Date(order.dateOrdered).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })}</span>

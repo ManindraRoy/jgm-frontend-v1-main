@@ -94,7 +94,7 @@ export default function Preloader({ isAppLoading }) {
                         <span className="total-val">/100</span>
                     </div>
                     <div className="premium-progress-bar">
-                        <div className="progress-fill" style={{ width: progress + '%' }}></div>
+                        <div className="progress-fill" style={{ width: `${progress}%` }}></div>
                     </div>
                     <p className="loading-status">Distilling Nature's Essence</p>
                 </div>
