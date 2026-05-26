@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import brandLogo from '../assets/brand-logo.png';
 import './Navbar.css';
 
@@ -8,7 +8,6 @@ export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const navigate = useNavigate();
-    const location = useLocation();
 
     const isAuthenticated = localStorage.getItem('is_customer_authenticated') === 'true';
 

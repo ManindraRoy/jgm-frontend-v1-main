@@ -88,7 +88,7 @@ export default function Profile() {
             setIsEditingAddress(false);
             toast.success("Address Book Synchronized");
         } catch (err) {
-            toast.error("Failed to update registry");
+            toast.error(err.response?.data?.message || "Failed to update registry");
         } finally {
             setSavingAddress(false);
         }
@@ -100,7 +100,7 @@ export default function Profile() {
             localStorage.removeItem('is_customer_authenticated');
             navigate('/');
         } catch (err) {
-            console.error("Session termination failed");
+            console.error("Session termination failed", err);
         }
     };
 

@@ -59,7 +59,7 @@ export default function Register() {
         e.preventDefault();
         setLoading(true);
         try {
-            const res = await api.post('/users/verify-email', { 
+            await api.post('/users/verify-email', { 
                 email: formData.email, 
                 otp: otp 
             });
