@@ -1,5 +1,5 @@
 /* =========================================================
-   SILENT AUTHORITY AUTHENTICATION 4.0 - PREMIUM POLISH
+   SILENT AUTHORITY AUTHENTICATION 4.1 - PREMIUM POLISH
    Supports Fluid Scaling for FHD & HD Resolutions
 ========================================================= */
 
@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    padding: clamp(80px, 10vh, 120px) 6% 40px; /* Fluid padding to respect navbar and height */
+    padding: clamp(80px, 9vh, 120px) 6% 40px; /* Fluid padding to respect navbar and height */
     height: 100%;
 }
 
@@ -48,7 +48,7 @@
     color: var(--accent-gold);
     border: 1px solid rgba(184, 158, 95, 0.35);
     padding: 10px 25px;
-    margin-bottom: clamp(20px, 4vh, 40px);
+    margin-bottom: clamp(18px, 3.5vh, 40px);
     display: inline-block;
     background: rgba(4, 43, 32, 0.2);
     backdrop-filter: blur(5px);
@@ -57,12 +57,12 @@
 
 .visual-namaste {
     width: 100%;
-    max-width: min(500px, 40vh); /* Adjust dynamically to viewport height */
+    max-width: min(450px, 50%, 42vh); /* Adjust dynamically to viewport height & width */
     height: auto;
     object-fit: contain;
     opacity: 0.85;
     filter: sepia(0.2) brightness(1.15) contrast(1.05);
-    margin-bottom: clamp(20px, 4vh, 40px);
+    margin-bottom: clamp(18px, 3.5vh, 40px);
     transition: transform 0.8s ease;
 }
 
@@ -72,7 +72,7 @@
 
 .visual-text h2 {
     font-family: var(--font-heading);
-    font-size: clamp(2.5rem, 4.5vh, 4rem);
+    font-size: clamp(2.3rem, 4.2vh, 4rem);
     letter-spacing: 5px;
     font-weight: 400;
     text-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -81,30 +81,41 @@
 .brand-cursive {
     font-family: var(--font-heading);
     font-style: italic;
-    font-size: clamp(1.4rem, 2.4vh, 1.8rem);
+    font-size: clamp(1.3rem, 2.2vh, 1.8rem);
     color: var(--accent-gold);
     display: block;
-    margin-bottom: clamp(6px, 1.2vh, 12px);
+    margin-bottom: clamp(5px, 1vh, 12px);
 }
 
 /* 2. FORM SIDE */
 .login-form-side {
-    padding: clamp(100px, 11vh, 120px) 12% clamp(45px, 6vh, 80px);
+    padding: clamp(80px, 9vh, 120px) 10% clamp(35px, 5vh, 80px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: var(--bg-base);
     height: 100%;
     overflow-y: auto;
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    scrollbar-width: thin; /* Show thin scrollbar for UX clarity if needed */
+    scrollbar-color: var(--accent-gold) transparent;
 }
 
+/* Custom premium scrollbar for form side */
 .login-form-side::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome, Safari, Opera */
+    width: 4px;
+}
+
+.login-form-side::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.login-form-side::-webkit-scrollbar-thumb {
+    background-color: var(--accent-gold);
+    border-radius: 4px;
 }
 
 .login-header-mini {
-    margin-bottom: clamp(25px, 5vh, 50px);
+    margin-bottom: clamp(20px, 4vh, 50px);
 }
 
 .login-header-mini h1 {
@@ -117,9 +128,9 @@
 }
 
 .login-card h2 {
-    font-size: clamp(2.2rem, 4.2vh, 2.8rem);
+    font-size: clamp(2rem, 3.8vh, 2.8rem);
     color: var(--primary-emerald);
-    margin-bottom: clamp(20px, 4vh, 35px);
+    margin-bottom: clamp(18px, 3.5vh, 35px);
     font-weight: 500;
     letter-spacing: -0.01em;
 }
@@ -127,13 +138,13 @@
 .login-form {
     display: flex;
     flex-direction: column;
-    gap: clamp(18px, 3vh, 28px);
+    gap: clamp(14px, 2.5vh, 28px);
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
-    gap: clamp(6px, 1vh, 10px);
+    gap: clamp(4px, 0.8vh, 10px);
 }
 
 .input-group label {
@@ -145,19 +156,19 @@
 }
 
 .input-group input {
-    padding: clamp(10px, 1.6vh, 16px) 0;
+    padding: clamp(8px, 1.4vh, 14px) 0;
     border: none;
     border-bottom: 1px solid var(--border-light);
     background: transparent;
-    font-size: clamp(0.95rem, 1.8vh, 1.05rem);
+    font-size: clamp(0.95rem, 1.6vh, 1.05rem);
     font-family: var(--font-ui);
     color: var(--text-main);
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .input-group input::placeholder {
-    color: rgba(4, 43, 32, 0.35);
-    font-size: 0.9rem;
+    color: rgba(4, 43, 32, 0.3);
+    font-size: 0.85rem;
 }
 
 .input-group input:focus {
@@ -170,13 +181,13 @@
     background: var(--primary-emerald);
     color: white;
     border: none;
-    padding: clamp(14px, 2vh, 20px);
+    padding: clamp(12px, 1.8vh, 18px);
     font-family: var(--font-heading);
-    font-size: clamp(1rem, 1.8vh, 1.15rem);
+    font-size: clamp(0.95rem, 1.6vh, 1.15rem);
     letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    margin-top: clamp(10px, 2vh, 18px);
+    margin-top: clamp(8px, 1.8vh, 16px);
 }
 
 .login-submit-btn:hover {
@@ -212,7 +223,7 @@
 
 .toggle-text {
     text-align: center;
-    margin-top: clamp(20px, 4vh, 35px);
+    margin-top: clamp(15px, 3vh, 35px);
     font-size: 0.85rem;
     color: var(--text-muted);
     cursor: pointer;
@@ -230,7 +241,7 @@
 
 @media (min-width: 1600px) {
     .visual-namaste {
-        max-width: min(600px, 45vh);
+        max-width: min(550px, 45vh);
     }
     .login-visual-side {
         padding-top: 10vh;
