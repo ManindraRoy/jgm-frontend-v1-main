@@ -185,6 +185,16 @@
     .input-group input { padding: 12px 0; }
     .login-submit-btn { padding: 16px; font-size: 1.1rem; margin-top: 10px; }
     .toggle-text { margin-top: 25px; }
+
+    /* Compact register portal modifier */
+    .register-portal .login-form-side { padding: 40px 8% 30px; }
+    .register-portal .login-header-mini { margin-bottom: 20px; }
+    .register-portal .login-card h2 { font-size: 2rem; margin-bottom: 20px; }
+    .register-portal .login-form { gap: 16px; }
+    .register-portal .input-group { gap: 6px; }
+    .register-portal .input-group input { padding: 10px 0; font-size: 1rem; }
+    .register-portal .login-submit-btn { padding: 14px; font-size: 1.1rem; margin-top: 5px; }
+    .register-portal .toggle-text { margin-top: 15px; }
 }
 
 @media (max-width: 1280px) {
@@ -198,6 +208,16 @@
     .login-header-mini { margin-bottom: 25px; }
     .login-submit-btn { padding: 14px; font-size: 1rem; }
     .toggle-text { margin-top: 20px; }
+
+    /* Extra compact register portal modifier */
+    .register-portal .login-form-side { padding: 30px 6% 20px; }
+    .register-portal .login-header-mini { margin-bottom: 15px; }
+    .register-portal .login-card h2 { font-size: 1.8rem; margin-bottom: 15px; }
+    .register-portal .login-form { gap: 12px; }
+    .register-portal .input-group { gap: 4px; }
+    .register-portal .input-group input { padding: 8px 0; font-size: 0.95rem; }
+    .register-portal .login-submit-btn { padding: 12px; font-size: 1rem; margin-top: 5px; }
+    .register-portal .toggle-text { margin-top: 10px; }
 }
 
 @media (min-width: 1600px) {
